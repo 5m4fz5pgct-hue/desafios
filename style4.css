@@ -1,0 +1,80 @@
+.prueba-social {
+  display: grid;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.introduccion .titulo {
+  font-size: 2.5rem;
+  color: #3d1c56;
+}
+
+.introduccion .descripcion {
+  font-size: 1.1rem;
+  color: #5f4b7a;
+}
+
+.valoraciones {
+  display: grid;
+  gap: 1rem;
+}
+
+.valoracion {
+  background: #f3e8ff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.estrellas {
+  color: #f5b301;
+  font-weight: bold;
+}
+
+.fuente {
+  font-weight: bold;
+  color: #3d1c56;
+}
+
+.testimonios {
+  display: grid;
+  gap: 1rem;
+}
+
+.tarjeta {
+  background: #3d1c56;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.foto {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nombre {
+  margin: 0;
+}
+
+.etiqueta {
+  color: #f7a1c4;
+  font-size: 0.9rem;
+}
+
+.comentario {
+  margin: 0;
+  line-height: 1.4;
+}
