@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --purple: #7650dc;
+  --purple-light: #e5ddff;
+  --yellow: #ffcb6b;
+  --yellow-light: #f9eee1;
+  --white: #ffffff;
+  --black: #121212;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f6f6f6;
+  padding: 2rem;
+}
+
+.bento {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "create hero hero schedule"
+    "write manage posting schedule"
+    "write growth followers followers";
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: var(--white);
+}
+
+/* cards */
+.create {
+  grid-area: create;
+  background: var(--yellow-light);
+}
+
+.create em {
+  color: var(--purple);
+}
+
+.create button {
+  margin-top: 1rem;
+  border: none;
+  background: var(--yellow);
+  padding: .7rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.hero {
+  grid-area: hero;
+  background: var(--purple);
+  color: white;
+  text-align: center;
+}
+
+.hero span {
+  color: var(--yellow);
+}
+
+.stars {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.schedule {
+  grid-area: schedule;
+  background: var(--purple-light);
+}
+
+.chart {
+  height: 120px;
+  background: linear-gradient(to top, var(--purple) 60%, transparent 60%);
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.write {
+  grid-area: write;
+  background: var(--yellow);
+}
+
+.chat {
+  height: 220px;
+  background: white;
+  background-image: url(flecha.png);
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.manage {
+  grid-area: manage;
+}
+
+.posting {
+  grid-area: posting;
+  background: var(--yellow);
+}
+
+.growth {
+  grid-area: growth;
+  text-align: center;
+}
+
+.followers {
+  grid-area: followers;
+  background: var(--purple);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .bento {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "create write"
+      "manage posting"
+      "schedule schedule"
+      "growth followers";
+  }
+}
+
+@media (max-width: 500px) {
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "create"
+      "write"
+      "manage"
+      "posting"
+      "schedule"
+      "growth"
+      "followers";
+  }
+}

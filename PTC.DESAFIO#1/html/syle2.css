@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #141314;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  background: linear-gradient(180deg, #46045e, #450586);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+  height: 240px;
+  background-image: url(Sin\ título.png);
+  margin-top: -27%;
+}
+
+
+.img::after {
+  position: absolute;
+  inset: 0;
+}
+
+.texto {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.texto h1 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.texto h1 span {
+  color: #a855f7;
+}
+
+.texto p {
+  font-size: .95rem;
+  line-height: 1.6;
+  opacity: .85;
+  margin-bottom: 30px;
+}
+
+
+.lista {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.lista div {
+  flex: 1;
+}
+
+.lista h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.lista span {
+  font-size: .75rem;
+  letter-spacing: 1px;
+  opacity: .7;
+}
+
+
+@media (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+    min-height: 380px;
+  }
+
+  .texto {
+    width: 50%;
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .lista {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}

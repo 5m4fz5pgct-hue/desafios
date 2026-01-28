@@ -1,0 +1,145 @@
+:root {
+  --bg: #f3e5d8;          /* fondo beige suave */
+  --card-bg: #ffffff;
+  --accent: #7b4a2f;     /* marrón suave (no tan fuerte) */
+  --muted: #5f564d;
+  --soft-accent: #fff7fb;
+  --border: #e6e1dc;
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 🔥 CENTRADO VERTICAL */
+  line-height: 1.6;
+}
+
+
+.luna {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.sol {
+  background: var(--card-bg);
+  max-width: 720px;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+
+.estrella {
+  width: 100%;
+  display: block;
+}
+
+
+.cometa {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2f2a26; 
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: var(--accent);
+  margin: 28px 0 12px;
+}
+
+h3 {
+  color: #eaa6c1;
+  margin-bottom: 10px;
+}
+
+.planeta {
+  margin-bottom: 24px;
+}
+
+
+.galaxia {
+  background: var(--soft-accent);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.galaxia ul {
+  padding-left: 20px;
+}
+
+.universo {
+  padding-left: 20px;
+}
+
+.asteroide {
+  padding-left: 20px;
+}
+
+.asteroide li {
+  margin-bottom: 10px;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 28px 0;
+}
+
+.constelacion {
+  margin-bottom: 12px;
+}
+
+.nebulosa {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nebulosa tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.nebulosa td {
+  padding: 12px 0;
+}
+
+.quasar,
+.supernova,
+.meteoro,
+.cometa2 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; 
+  }
+
+  .cometa {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
